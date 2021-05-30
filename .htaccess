@@ -1,0 +1,8 @@
+<IfModule mod_headers.c>
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, PUT, POST, DELETE, HEAD , OPTIONS"
+    Header always set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding"
+</IfModule>
+
+RewriteEngine On
+RewriteRule ([a-zA-Z-]*) $1\.php
